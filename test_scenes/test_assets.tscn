@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0p5ce5dgj0lc"]
+
+[ext_resource type="PackedScene" uid="uid://dcn4gnr70hy38" path="res://player/player.tscn" id="1_pu33k"]
+[ext_resource type="PackedScene" uid="uid://dwambttwidycx" path="res://misc/meat.tscn" id="2_jeh56"]
+[ext_resource type="PackedScene" uid="uid://wntn4pg0gbv8" path="res://misc/ritual.tscn" id="3_xr8am"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_21fqj"]
+radius = 386.374
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(0, 2)
+
+[node name="Player" parent="." instance=ExtResource("1_pu33k")]
+position = Vector2(528, 354)
+health = 50
+
+[node name="Meat" parent="." instance=ExtResource("2_jeh56")]
+position = Vector2(714, 185)
+
+[node name="Meat2" parent="." instance=ExtResource("2_jeh56")]
+position = Vector2(962, 515)
+
+[node name="Ritual" parent="." instance=ExtResource("3_xr8am")]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_21fqj")
+debug_color = Color(0, 0.6, 0.701961, 0)
