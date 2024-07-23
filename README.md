@@ -1,5 +1,7 @@
-# [Tiny Knight](https://isapassos145.itch.io/tiny-knight)
+# Tiny Knight
 Projeto final feito durante a trilha de desenvolvimento de jogos com Godot da DIO.
+
+[Link da página do itch.io](https://isapassos145.itch.io/tiny-knight)
 
 # Controles
 **Movimentação**: WASD ou Setas do teclado
